@@ -1,0 +1,70 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #28323a; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(#39a185, #7fc681); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#39a185, #7fc681); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#39a185, #7fc681); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#39a185, #7fc681); /* Standard syntax */
+		color: white;
+		font-size: 14px;
+}
+
+.wrapper {}
+
+.type {
+    width: 500px;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+.logo {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 10em;
+  letter-spacing: 0em;
+  margin-bottom: 0.2em;
+  line-height: 0.9em;
+}
+.description {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8em;
+}
+.contact a {
+  color: #87E1B4;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition:all 0.3s ease;
+}
+.contact a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .type {
+        width: 90vw;
+        height: 80vh;
+    }
+    .logo {
+      font-size: 5em;
+      margin-bottom: 0.4em;
+    }
+    .description {
+      font-size: 0.8em;
+    }
+    .contact a {
+      font-size: 0.8em;
+    }
+}
